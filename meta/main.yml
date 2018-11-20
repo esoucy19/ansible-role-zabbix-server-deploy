@@ -25,3 +25,4 @@ galaxy_info:
   galaxy_tags: []
 dependencies:
   - {role: bertvv.mariadb, become: true}
+  - {role: dj-wasabi.zabbix-server, become: true}
