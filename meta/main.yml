@@ -23,4 +23,5 @@ galaxy_info:
         - 7
 
   galaxy_tags: []
-dependencies: []
+dependencies:
+  - {role: bertvv.mariadb, become: true}
