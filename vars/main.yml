@@ -1,1 +1,5 @@
 ---
+zabbix_server_database: mysql
+zabbix_server_database_long: mysql
+zabbix_server_database_creation: true
+zabbix_server_database_sqlload: true

@@ -1,4 +1,13 @@
 ---
 - hosts: all
+  pre_tasks:
+
+    - name: Docker | Enable doc installation in yum
+      lineinfile:
+        path: /etc/yum.conf
+        regexp: '^tsflags=nodocs'
+        state: absent
+      become: true
+
   roles:
     - zabbix-server-deploy
