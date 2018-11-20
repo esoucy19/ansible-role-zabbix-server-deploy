@@ -9,7 +9,7 @@ install: bundle_install pipenv_install
 
 lint: ansible-lint yamllint rubocop
 
-pre_converge: ansible-lint yamllint ansible_galaxy_install
+pre_converge: ansible-lint yamllint
 
 pre_verify: rubocop
 
@@ -45,6 +45,3 @@ bundle_install:
 
 pipenv_install:
 	pipenv install
-
-ansible_galaxy_install:
-	ansible-galaxy install -r ./requirements.yml
