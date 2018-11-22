@@ -26,3 +26,4 @@ galaxy_info:
 dependencies:
   - {role: bertvv.mariadb, become: true}
   - {role: dj-wasabi.zabbix-server, become: true}
+  - {role: dj-wasabi.zabbix-web, become: true}
