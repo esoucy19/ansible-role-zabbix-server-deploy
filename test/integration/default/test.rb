@@ -17,3 +17,15 @@ end
 describe package('zabbix-server-mysql') do
   it { should be_installed }
 end
+
+describe port('10051') do
+  it { should be_listening }
+end
+
+describe mysql_session('root').query('show databases;') do
+  its('stdout') { should match(/zabbix/) }
+end
+
+describe package('zabbix-web') do
+  it { should be_installed }
+end
