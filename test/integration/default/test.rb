@@ -39,7 +39,7 @@ describe port('80') do
   it { should be_listening }
 end
 
-describe http('http://localhost') do
+describe http('http://172.17.0.2') do
   its('status') { should cmp 200 }
-  its('title') { should match(/zabbix/) }
+  its('body') { should match(%r{<title>.*Zabbix<\/title>}) }
 end
