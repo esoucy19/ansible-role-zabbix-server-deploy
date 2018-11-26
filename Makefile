@@ -44,4 +44,4 @@ bundle_install:
 	bundle install
 
 pipenv_install:
-	pipenv install
+	pipenv install --dev
