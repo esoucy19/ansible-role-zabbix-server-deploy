@@ -9,6 +9,9 @@
         state: absent
       become: true
 
+    - debug:
+        var: ansible_facts
+
   roles:
     - {role: zabbix-server-deploy,
-       zabbix_url: "{{ ansible_eth0.ipv4.address }}"}
+       zabbix_url: "172.17.0.2"}
