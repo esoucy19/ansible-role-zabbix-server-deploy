@@ -24,6 +24,6 @@ galaxy_info:
 
   galaxy_tags: []
 dependencies:
-  - {role: bertvv.mariadb, become: true}
-  - {role: dj-wasabi.zabbix-server, become: true}
-  - {role: dj-wasabi.zabbix-web, become: true}
+  - {src: bertvv.mariadb, become: true}
+  - {src: dj-wasabi.zabbix-server, become: true}
+  - {src: dj-wasabi.zabbix-web, become: true}
