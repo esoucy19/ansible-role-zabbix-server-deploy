@@ -5,7 +5,7 @@ PR=pipenv run
 
 all: test
 
-install: bundle_install pipenv_install
+install: bundle_install pipenv_install ansible-galaxy_install
 
 lint: ansible-lint yamllint rubocop
 
