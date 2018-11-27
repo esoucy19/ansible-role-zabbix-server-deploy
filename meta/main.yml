@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: zabbix-server-deploy
   author: Etienne Soucy
   description: Ansible role to deploy a fully functioning Zabbix server.
   company: your company (optional)
